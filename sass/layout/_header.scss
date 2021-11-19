@@ -1,0 +1,42 @@
+
+
+.header{
+  background: 
+  linear-gradient(
+      to right bottom,
+      rgba(0, 8, 6, 0.849),
+      rgba(110, 114, 112, 0.336)
+    ),
+  url("https://source.unsplash.com/1600x900/?gym") no-repeat center center/cover;
+  height: 97vh;
+  position: relative;
+  /* background-size: cover; */
+  
+  /* background-position: top; */
+  clip-path: polygon(0 0,100% 0,100% 80vh,0 100%);
+  /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+
+  
+  
+}
+
+.logo-box
+{
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+}
+
+.logo
+{
+  height: 9rem;
+}
+.text-box
+{
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+

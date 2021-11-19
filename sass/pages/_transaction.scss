@@ -1,0 +1,90 @@
+.payment {
+    &-boundary {
+      border: 1px solid black;
+      margin-left: 4rem;
+      max-width: 114rem;
+      height: 50rem;
+      position: relative;
+    }
+    &-welcome {
+      margin-left: 23rem;
+    }
+  }
+  .section {
+    &-details {
+      position: absolute;
+      top: 12%;
+      left: 0%;
+      height: 50rem;
+      width: 114rem;
+      background: linear-gradient(
+          100deg,
+          rgba(white, 0.92) 0%,
+          rgba(white, 0.92) 50%,
+          transparent 50%
+        ),
+        url("https://cdn.pixabay.com/photo/2013/12/17/13/57/cheque-guarantee-card-229830__480.jpg");
+      background-size: 100%;
+    }
+  }
+  .applicant-details {
+    margin-left: 7rem;
+    margin-top: 3rem;
+  }
+  .common {
+    line-height: 4rem;
+    font-size: 3rem;
+  }
+  .upi {
+    margin-top: 5rem;
+  }
+  .mode {
+    margin-left: 2rem;
+    border: 3px solid black;
+    width: 43%;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    color: rgb(20, 20, 77);
+    font-weight: bold;
+  }
+  
+  .btn-join {
+    width: 15%;
+    height: 3rem;
+    margin-left: 15rem;
+    font-family: inherit;
+    color: $color-primary;
+    text-transform: uppercase;
+    padding-left: 4.1rem;
+    padding-top: 0.5rem;
+    border: none;
+    border-radius: 10rem;
+    letter-spacing: 0.12rem;
+    background-color: rgb(20, 20, 77);
+    transition: all 0.2s;
+    &:hover {
+      box-shadow: 0 0.7rem 2rem rgba($color:black, $alpha: 0.9);
+      transform: translateY(1rem);
+    }
+  }
+  .upi:hover {
+    background: linear-gradient(
+      to right bottom,
+      rgba(74, 144, 223, 0.856),
+      rgba(255, 255, 255, 0.582)
+    );
+  }
+  .cards:hover {
+    background: linear-gradient(
+      to right bottom,
+      rgba(74, 144, 223, 0.856),
+      rgba(255, 255, 255, 0.582)
+    );
+  }
+  .netbanking:hover {
+    background: linear-gradient(
+      to right bottom,
+      rgba(74, 144, 223, 0.856),
+      rgba(255, 255, 255, 0.582)
+    );
+  }

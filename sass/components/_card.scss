@@ -1,0 +1,138 @@
+.card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    // background-color: orangered;
+     height: 50rem;
+    // transition: all .8s;
+
+    &__side{
+       // background-color: orangered;
+        color: #fff;
+        font-size: 2rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        overflow: hidden;
+        height: 50rem;
+        transition: all 1s;
+
+       
+        &--image1{
+            background-blend-mode: screen;
+        background-size: cover;
+            height: 40rem;
+            background-image: linear-gradient(to right bottom ,$color-test-1,$color-test-5), url('https://images.unsplash.com/photo-1623874228601-f4193c7b1818?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZHVtYmJlbGxzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 300px, 0 100%);
+
+        }
+
+        &--image2{
+            background-blend-mode: screen;
+            background-size: cover;
+            height: 40rem;
+            background-image: linear-gradient(to right bottom ,$color-test-5,$color-test-3) , url("https://images.unsplash.com/photo-1547919307-1ecb10702e6f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHdlaWdodHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") ;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 300px, 0 100%);
+
+
+        }
+
+        &--image3{
+            background-blend-mode: screen;
+            background-size: cover;
+            height: 40rem;
+            background-image: linear-gradient(to right bottom ,$color-test-3,rgba(255, 255, 255, 0.582)) , url("https://images.unsplash.com/photo-1590487988357-5233b152a9b7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fGd5bXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60") ;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 300px, 0 100%);
+
+        }
+
+     
+        &--back{
+           // background-color: green;
+            transform: rotateY(180deg);
+
+            &-1{
+                background-image: linear-gradient(to right bottom ,$color-test-1,$color-test-5);
+            }
+            &-2{
+                background-image: linear-gradient(to right bottom ,$color-test-5,$color-test-3);
+            }
+            &-3
+            {
+                background-image: linear-gradient(to right bottom ,$color-test-3,$color-primary);
+            }
+        }
+        
+        &--front{
+            background-color: $color-grey-light-1;
+        }
+
+    }
+
+    &__heading{
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        //color: $color-test-6;
+        position: absolute;
+        top: 38rem;
+        left: 8.5rem;
+    }
+
+    &__heading-span{
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-brea:clone;
+        box-decoration-break: clone;
+
+        &--1{
+            
+            background-image:linear-gradient(to right bottom ,$color-test-1,$color-test-5) ;
+        }
+        &--2{
+            background-image:  linear-gradient(to right bottom ,$color-test-5,$color-test-3);
+        }
+        &--3{
+            background-image: linear-gradient(to right bottom ,$color-test-3,rgba(255, 255, 255, 0.582));
+            padding: 1rem 2rem;
+        }
+    }
+
+    &:hover &__side--front{
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back{
+        transform: rotateY(0);
+    }
+
+    &__cta{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &__price-box{
+        text-align: center;
+        color: $color-primary;
+        margin-bottom: 8rem;
+    }
+
+    &__price-only{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value{
+        font-size: 6rem;
+        font-weight: 100;
+    }
+}
