@@ -1,0 +1,115 @@
+.pricing_pannel {
+   // 
+    height: 90vh;
+    width: 88vw;
+    background-color: rgba(240, 240, 245, 0.959);
+    position: absolute;
+    top: 32rem;
+    left: 4.8rem;
+  
+    .payment {
+      margin-top: 4.5rem;
+      margin-left: 34.5%;
+    }
+  
+    &__self {
+      width: 45vw;
+    }
+  
+    .cost {
+      // border: 1px solid black;
+      // background-color: red;
+      width: 20%;
+      height: 30%;
+      margin-left: 17rem;
+  
+      &_price {
+        text-align: center;
+        padding: 2rem 0;
+        font-size: 5rem;
+        color: blue;
+      }
+    }
+    .duration {
+      margin-top: 0.7rem;
+  
+      .self {
+        margin-left: 0.8rem;
+        font-size: 1.6rem;
+        color: black;
+      }
+      #plan {
+        margin-left: 1rem;
+      }
+    }
+  
+    .benefits {
+      margin-left: 3rem;
+  
+      &__self__list {
+        list-style: square;
+        color: black;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        line-height: 3rem;
+        font-weight: bolder;
+      }
+    }
+  }
+  .pricing_pannel__complete {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: absolute;
+    top: 0%;
+    left: 55%;
+  
+    .benefits__complete {
+      &__list {
+        list-style: square;
+        color: black;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        line-height: 3rem;
+        font-weight: bolder;
+      }
+    }
+    .cost__complete {
+      // border: 1px solid black;
+      // background-color: red;
+      width: 20%;
+      height: 30%;
+      margin-left: 17rem;
+  
+      &_price {
+        text-align: center;
+        padding: 2rem 0;
+        font-size: 5rem;
+        color:blue;
+      }
+    }
+    .duration__complete {
+      margin-top: 0.7rem;
+  
+      .complete {
+        font-size: 1.6rem;
+        color: black;
+      }
+      #plan__complete {
+        margin-left: 1rem;
+      }
+    }
+  }
+  .hidden{
+    display: none;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
